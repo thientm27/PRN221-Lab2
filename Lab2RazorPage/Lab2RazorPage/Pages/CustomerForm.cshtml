@@ -1,0 +1,45 @@
+@page
+@model Lab2RazorPage.Pages.CustomerForm
+
+@{
+    var customerInfo = Model.CustomerInfo;
+    if (customerInfo != null)
+    {
+        <h3>Code message</h3>
+        <div asp-validation-summary="All"></div>
+        {
+            <div class="card">
+                <div class="card-body">
+                    <p><strong>Customer name: </strong> @customerInfo.CustomerName</p>
+                    <p><strong>Customer email: </strong> @customerInfo.Email</p>
+                    <p><strong>Year of Birth: </strong> @customerInfo.YearOfBirth</p>
+                </div>
+            </div>
+        }
+    }
+}
+
+<h2>Customer information</h2>
+<form method="post" class="m-2 p-3 bg-light">
+    <div class="form-group">
+        <label asp-for="@customerInfo.CustomerName"></label>
+        <input class="form-control" asp-for="@customerInfo.CustomerName" />
+        <span asp-validation-for="@customerInfo.CustomerName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@customerInfo.Email"></label>
+        <input class="form-control" asp-for="@customerInfo.Email" />
+        <span asp-validation-for="@customerInfo.Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@customerInfo.YearOfBirth"></label>
+        <input class="form-control" asp-for="@customerInfo.YearOfBirth" />
+        <span asp-validation-for="@customerInfo.YearOfBirth" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <button class="btn btn-primary" asp-page="Form">Send</button>
+    </div>
+</form>
