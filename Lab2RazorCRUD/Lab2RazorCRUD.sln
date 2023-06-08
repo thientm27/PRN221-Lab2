@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2RazorCRUD", "Lab2RazorCRUD\Lab2RazorCRUD.csproj", "{E5FD6C03-3757-4BBA-B96F-5E982F3EDD42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{80661311-119A-4879-9785-F716C0F0B2A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E5FD6C03-3757-4BBA-B96F-5E982F3EDD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5FD6C03-3757-4BBA-B96F-5E982F3EDD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5FD6C03-3757-4BBA-B96F-5E982F3EDD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80661311-119A-4879-9785-F716C0F0B2A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80661311-119A-4879-9785-F716C0F0B2A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80661311-119A-4879-9785-F716C0F0B2A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80661311-119A-4879-9785-F716C0F0B2A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
